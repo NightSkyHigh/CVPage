@@ -1,0 +1,27 @@
+{
+    "name" : "Thomas",
+    "title" : "Developer",
+    "dateOfBirth" : "1995",
+    "phoneNumber" : "hidden",
+    "email" : "Thomas.haugstveit.warren@no.experis.com",
+    "adress" : "Sagene 10",
+    "image" : "/images/Thomas_Warren.jpg",
+
+    "qualifications" : "I am a fullstack Java Developer with a wide range of skills. I have experience and knownledge in HTML, CSS, Java, React and many other technological skillsets",
+    "workExperience" : [
+        {
+            "companyName" : "Experis",
+            "role" : "Fullstack developer"
+        },
+        {
+            "companyName" : "PayEx",
+            "role" : "Backend developer"
+        }
+
+    ],
+
+    "links" : [
+        "https://github.com/NightSkyHigh",
+        "https://www.linkedin.com/in/thomas-warren-01a756153/"
+    ]
+}

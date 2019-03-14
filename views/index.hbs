@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset='UTF-8'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
+  <div class="col s12 m7">
+    <h3 class="header" align="center">Curriculum Vitae</h3>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="{{data.image}}" style="width:400px;height:300px;">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content" align="center">
+            <h4>Personal Info</h4>
+            <p>Name: {{data.name}}</p>
+            <p>Title: </title>{{data.title}}</p>
+            <p>Date of Birth: {{data.dateOfBirth}}</p>
+            <p>Phonenumber: {{data.phoneNumber}}</p>
+            <p>Email: {{data.email}}</p>
+            <p>Adress: {{data.adress}}</p>
+        </div>
+        <div class="card-action">
+          <h4>Resources</h4>
+            <ul class="mdc-list">
+                {{#each data.links}}
+                    <li class="mdc-list-item"><a href={{this}}>{{this}}</a></li>
+                {{/each}}
+            </ul>        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m7">
+      <div class="card horizontal">
+          <div class="card-stacked">
+                <div class="card-content" align="center">
+                <h4>Qualifications</h4>
+                <p>{{data.qualifications}}</p>
+        </div>
+        <div class="card-content" align="center">
+            <ul><h4>Experience</h4>
+                {{#each data.workExperience}}
+                <li>Company: {{this.companyName}}</li>
+                <li>Role: {{this.role}}</li>
+                {{/each}}
+            </ul>
+        </div>
+              </div>
+          </div>
+      </div>
+
+  
+    </body>
+</html>
